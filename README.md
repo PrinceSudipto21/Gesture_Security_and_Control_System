@@ -9,4 +9,4 @@ A gesture sensing model which will lock or unlock any type of system and can con
 * **Testing and Matching** - *Sudipto Das*
 * **Perform the Respective Task** - *Subhajit Dutta*
 
-### NOTE: - Follow the flowchart for better understanding.
+### NOTE: - Go through the provided flowchart for better understanding.
