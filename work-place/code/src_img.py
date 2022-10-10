@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 from tkinter import SOLID
+=======
+>>>>>>> ee5c0b98a1ada5c40994328fd9e34ee3bd30c40c
 import cv2
 import mediapipe as mp
 cap = cv2.VideoCapture(0) # Replace with your own video and webcam
@@ -8,7 +11,11 @@ hands = mpHands.Hands()
 
 def coordinate(id, h, w):
     cx, cy = lm.x*w, lm.y*h
+<<<<<<< HEAD
     cv2.circle(img, (int(cx), int(cy)), 3, (255,255,255), cv2.FILLED)
+=======
+    cv2.circle(img, (int(cx), int(cy)), 1, (255,255,255), cv2.FILLED)  
+>>>>>>> ee5c0b98a1ada5c40994328fd9e34ee3bd30c40c
     return cx, cy
 
 while True:
@@ -88,6 +95,12 @@ while True:
             else:
                 figners_correct=0
             
+<<<<<<< HEAD
+=======
+            if handsup==1 and thumbs_correct==1 and fingers_correct==1 and Take_photo==0:
+                Take_photo=120
+
+>>>>>>> ee5c0b98a1ada5c40994328fd9e34ee3bd30c40c
     cv2.imshow("Image", img)
     
     if cv2.waitKey(10) & 0xFF==ord('q'):
