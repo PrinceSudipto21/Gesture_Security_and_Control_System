@@ -1,6 +1,3 @@
-from tkinter import SOLID
-import cv2
-import mediapipe as mp
 
 mpHands = mp.solutions.hands
 hands = mpHands.Hands() 
