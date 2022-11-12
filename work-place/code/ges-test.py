@@ -15,8 +15,7 @@ Y = [161, 150, 139, 128, 118, 110, 104, 100, 94, 90, 84, 81, 79, 75, 73, 70, 66,
 Z = [423, 392, 365, 348, 332, 310, 291, 274, 255, 243, 230, 224, 211, 205, 195, 188, 178, 170, 163, 161]    ##shown length between index 0 and 12
 
 coff = np.polyfit(Y, X, 2)
-coff2 = np.polyfit(Z, Y, 2)
-
+coff2 = np.polyfit(Z, X, 2)
 A, B, C = coff
 D, E, F = coff2
 
