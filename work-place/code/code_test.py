@@ -35,7 +35,6 @@ def error(dis, i):
         b = (dis/i)*100
     else:
         b = 100
-    print(b)
     return b
 
 def addAdmins():
